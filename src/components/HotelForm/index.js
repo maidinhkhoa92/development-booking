@@ -117,7 +117,14 @@ class Form extends React.Component {
           </div>
           <div className="col-md-6 col-sm-12 col-xs-12" id="rooms-adults-childs">
             <label>Guest</label>
-            <input id="travel-count1" className="input-text full-width hotel-traveler" value={params.NoOfRooms+" Room(s), "+params.AdultCount+" Adult(s), "+params.ChildCount+" Child(s)"} readOnly={true} type="text"></input>
+            <input 
+              id="travel-count1" 
+              className="input-text full-width hotel-traveler" 
+              value={params.NoOfRooms+" Room(s), "+params.AdultCount+" Adult(s), "+params.ChildCount+" Child(s)"} 
+              readOnly={true} 
+              type="text" 
+              onClick={e => {this.setToggle('room', true)}}
+            />
             {
               toggle.room && <Room />
             }
