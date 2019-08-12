@@ -4,7 +4,7 @@ const Room = () => {
         <div className="arrow_box guest-traveler" >
             <div className="type-keyword col-xs-12">
                 <span className="col-xs-11">Add Guest</span>
-                
+                <i className="fas fa-times drop-down-icon"></i>
             </div>
             <div id="guest-box" className="show">
                 <ul className="traveler-increase-decrease">
