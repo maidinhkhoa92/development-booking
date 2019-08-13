@@ -71,7 +71,7 @@ class Home extends React.Component {
     return (
       <div className="main-search">
         <div className="container">
-          { this.state.error.length > 0 && <div className="alert alert-danger">{this.state.error}</div> }
+          { this.state.error !== '' && <div className="alert alert-danger">{this.state.error}</div> }
           <ul className="nav nav-tabs" id="myTab" role="tablist">
             <li className="nav-item">
               <a className={this.setStyle("nav-link", "tabs", 0)} onClick={() => { this.setTabs('tabs', 0) }}>Hotels</a>

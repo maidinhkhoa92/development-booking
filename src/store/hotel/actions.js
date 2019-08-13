@@ -16,6 +16,16 @@ const actions = {
     type: actions.GET_NATIONALITY_REQUEST,
     success,
     fail
+  }),
+
+  SEARCH_HOTEL_REQUEST: 'SEARCH_HOTEL_REQUEST',
+  SEARCH_HOTEL_SUCCESS: 'SEARCH_HOTEL_SUCCESS',
+  
+  searchHotel: (params, success, fail) => ({
+    type: actions.SEARCH_HOTEL_REQUEST,
+    params,
+    success,
+    fail
   })
 };
 export default actions;
