@@ -1,64 +1,22 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
-import { hotelActions } from 'store/actions';
-import { BusForm, CarForm, FlightForm, HotelForm, TourForm, Loading } from 'components'
+import {HotelSidebar, HotelResult} from 'components';
 
-class Hotels extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      tabs: 0,
-      loading: false,
-      error: '',
+class HotelList extends React.Component {
+    constructor(props){
+        super(props);
     }
-  }
-
-  componentDidMount() {
-    const { getNationality } = this.props;
-    this.setState({
-      loading: true
-    }, () => {
-      getNationality(this.success, this.error)
-    })
-  }
-
-  success = () => {
-    this.setState({
-      loading: false
-    })
-  }
-
-  error = error => {
-    this.setState({
-      loading: false,
-      error: error
-    })
-  }
-
-  render() {
-    if(this.state.loading) {
-      return <Loading />
+    render() {
+        return (
+            <div id="content" className="mobile-view hotel-listing">
+                <div className="container">
+                    <div className="row">
+                        <HotelSidebar />
+                        <HotelResult />
+                    </div>
+                </div>
+            </div>
+        )
     }
-    return (
-      <div className="main-search">
-      </div>
-    );
-  }
 }
 
-Hotels.propTypes = {
-  getNationality: PropTypes.func
-};
-
-
-const mapStateToProps = state => {
-  return {
-  };
-};
-
-const mapDispatchToProps = {
-  getNationality: hotelActions.getNationality
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(Hotels);
+export default HotelList;
