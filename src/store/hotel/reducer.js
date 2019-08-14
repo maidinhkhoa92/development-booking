@@ -13,6 +13,8 @@ const Hotel = (state = initialState, action) => {
       return { ...state, destination: action.payload };
     case actions.GET_NATIONALITY_SUCCESS:
       return { ...state, nationality: action.payload };
+    case actions.SEARCH_HOTEL_SUCCESS:
+      return { ...state, hotels: action.payload };
     default:
       return state;
   }

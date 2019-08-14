@@ -40,6 +40,25 @@ export function* getNationalitySaga() {
   });
 }
 
+export function* searchHotelSaga() {
+  yield takeEvery(actions.SEARCH_HOTEL_REQUEST, function*(data) {
+    try {
+      const { params, success, fail } = data;
+      
+      const res = yield Search(params);
+      console.log(res)
+      if (res.status === 200) {
+        yield put({ type: actions.SEARCH_HOTEL_SUCCESS, payload: res.data });
+        yield success();
+      } else {
+        yield fail('No hotels');
+      }
+    } catch (error) {
+      console.log(error)
+    }
+  });
+}
+
 export default function* rootSaga() {
-  yield all([fork(getDestinationSaga), fork(getNationalitySaga)]);
+  yield all([fork(getDestinationSaga), fork(getNationalitySaga), fork(searchHotelSaga)]);
 }

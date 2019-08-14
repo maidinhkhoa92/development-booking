@@ -4,3 +4,5 @@
  export {default as HotelForm} from './HotelForm';
  export {default as TourForm} from './TourForm';
  export {default as Loading} from './Loading';
+ export {default as HotelSidebar} from './HotelSideBar';
+ export {default as HotelResult} from './HotelResult';

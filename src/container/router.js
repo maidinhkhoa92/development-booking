@@ -4,6 +4,7 @@ import history from 'utils/history';
 import RootContainer from 'container/RootContainer';
 
 import Home from 'container/Home';
+import HotelList from 'container/Hotel';
 
 const AppRouter = () => {
   return (
@@ -11,6 +12,7 @@ const AppRouter = () => {
       <RootContainer>
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route exact path="/hotels" component={HotelList} />
         </Switch>
       </RootContainer>
     </Router>
