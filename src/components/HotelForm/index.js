@@ -8,6 +8,7 @@ import history from 'utils/history';
 import Place from './Place';
 import Room from './Room';
 import {Loading} from 'components';
+import _ from 'lodash';
 
 class Form extends React.Component {
   constructor(props){
@@ -82,6 +83,7 @@ class Form extends React.Component {
       ...this.state.params,
       CheckinDate: convertStyleA(this.state.params.CheckinDate),
       CheckoutDate: convertStyleA(this.state.params.CheckoutDate),
+      ChildAge: _.join(this.state.params.ChildAge, ',')
     }
     this.setState({
       loading: {

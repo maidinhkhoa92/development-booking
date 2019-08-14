@@ -7,7 +7,7 @@ const Place = ({loading, list, setParams, setToggle}) => {
         <div className="select2-results" id="select_city_hotel">
             <div className="type-keyword col-xs-12">
                 <span className="col-xs-11">Type in keywords to search or select from below: </span>
-                <i class="fas fa-times drop-down-icon"></i>
+                <i onClick={() => setToggle('place', false)} className="fa fa-times drop-down-icon"></i>
             </div>
             <div className="tab-container full-width-style white-bg">
                 { 
