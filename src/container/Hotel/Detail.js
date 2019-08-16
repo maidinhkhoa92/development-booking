@@ -1,16 +1,16 @@
 import React from 'react';
-import {HotelSidebar} from 'components';
+import HotelDetail from 'components/HotelDetail'; 
 
-class HotelDetail extends React.Component {
+class HotelDetailContainer extends React.Component {
     constructor(props){
         super(props);
     }
     render() {
         return (
-            <div id="content" class="mobile-view hotel-listing">
-                <div class="container">
-                    <div class="row">
-                        <HotelSidebar />
+            <div id="content" className="mobile-view hotel-detail">
+                <div className="container">
+                    <div className="row">
+                        <HotelDetail />
                     </div>
                 </div>
             </div>
@@ -18,4 +18,4 @@ class HotelDetail extends React.Component {
     }
 }
 
-export default HotelDetail;
+export default HotelDetailContainer;
