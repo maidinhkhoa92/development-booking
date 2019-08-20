@@ -1,9 +1,10 @@
 import actions from './actions';
-import { all, fork, put, takeEvery } from 'redux-saga/effects';
+import { all, fork, put, takeLatest, select } from 'redux-saga/effects';
+import { searchInfo } from 'store/selectors'
 import { Destination, Nationality, Search, Detail, Room, AvailabilityPricing } from 'services/hotel';
 
 export function* getDestinationSaga() {
-  yield takeEvery(actions.GET_DESTINATION_REQUEST, function*(data) {
+  yield takeLatest(actions.GET_DESTINATION_REQUEST, function*(data) {
     try {
       const { params, success, fail } = data;
       
@@ -22,7 +23,7 @@ export function* getDestinationSaga() {
 }
 
 export function* getNationalitySaga() {
-  yield takeEvery(actions.GET_NATIONALITY_REQUEST, function*(data) {
+  yield takeLatest(actions.GET_NATIONALITY_REQUEST, function*(data) {
     try {
       const { success, fail } = data;
 
@@ -41,12 +42,11 @@ export function* getNationalitySaga() {
 }
 
 export function* searchHotelSaga() {
-  yield takeEvery(actions.SEARCH_HOTEL_REQUEST, function*(data) {
+  yield takeLatest(actions.SEARCH_HOTEL_REQUEST, function*(data) {
     try {
       const { params, success, fail } = data;
       
       const res = yield Search(params);
-      console.log(res)
       if (res.status === 200) {
         yield put({ type: actions.SEARCH_HOTEL_SUCCESS, payload: res.data });
         yield success();
@@ -59,6 +59,30 @@ export function* searchHotelSaga() {
   });
 }
 
+export function* detailHotelSaga() {
+  yield takeLatest(actions.GET_DETAIL_REQUEST, function*(data) {
+    try {
+      const { params, success, fail } = data;
+      const hotelInfo = select(searchInfo); 
+
+      const body = {
+        ...params,
+        SessionId: hotelInfo.SessionId,
+      }
+      
+      const res = yield Detail(body);
+      if (res.status === 200) {
+        yield put({ type: actions.GET_DETAIL_SUCCESS, payload: res.data });
+        yield success();
+      } else {
+        yield fail('No hotels');
+      }
+    } catch (error) {
+      console.log(error)
+    }
+  });
+}
+
 export default function* rootSaga() {
-  yield all([fork(getDestinationSaga), fork(getNationalitySaga), fork(searchHotelSaga)]);
+  yield all([fork(getDestinationSaga), fork(getNationalitySaga), fork(searchHotelSaga), fork(detailHotelSaga)]);
 }

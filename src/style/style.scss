@@ -1207,3 +1207,411 @@ article {
     justify-content: flex-start;
     align-items: center;
 }
+.hotel-detail .sub-hotel-block section#rooms, .hotel-detail .main-div, .hotel-detail .avg-price-tbody, .hotel-detail .slide-map {
+    width: 100%;
+    height: auto;
+    display: flex;
+    background: #fff;
+}
+.detail-name-price {
+    background: #fff;
+}
+.hotel-detail .detail-name-price .main-div {
+    padding-bottom: 10px;
+}
+.hotel-detail .detail-name-price .left-div .name-address {
+    width: 100%;
+    line-height: 28px;
+    padding: 15px 15px 0;
+}
+.hotel-detail .detail-name-price .left-div .name-address-block {
+    width: 75%;
+}
+.hotel-detail .detail-name-price .left-div .hotel-name {
+    font-size: 21px;
+    color: #222222;
+    margin-bottom: 0;
+    line-height: 22px;
+}
+.hotel-detail .detail-name-price .left-div .star-block {
+    display: inline-block;
+}
+.hotel-detail .detail-name-price .left-div .detail-address {
+    font-size: 13px;
+    color: #0a56bb;
+    width: 100%;
+}
+.hotel-detail .detail-name-price .left-div .tripadvisor-rating {
+    font-size: 11px;
+    line-height: 1.6;
+}
+.detail-address img {
+    width: 20px;
+}
+.hotel-detail .detail-name-price .right-div {
+    background: #f7f7f7;
+    padding: 10px;
+    font-size: 11px;
+}
+.hotel-detail .detail-name-price .right-div span {
+    display: block;
+    text-align: center;
+}
+.hotel-detail .detail-name-price .right-div .main-price {
+    font-size: 21px;
+    color: #0a65bb;
+}
+.hotel-detail .detail-ameni-intro {
+    background: #ffffff;
+    margin-bottom: 10px;
+}
+.hotel-detail .detail-ameni-intro .detail-amenity-icon {
+    float: left;
+    width: 20%;
+}
+.hotel-detail .detail-ameni-intro .detail-amenity-list {
+    float: left;
+    width: 80%;
+    line-height: 15px;
+    padding-left: 5px;
+}
+.hotel-detail .detail-ameni-intro .detail-amenity-list.oneLine {
+    line-height: 28px;
+    font-size: 12px;
+}
+.hotel-detail .detail-ameni-intro .detail-amenity-icon img {
+    width: 30px;
+}
+.hotel-detail .detail-ameni-intro a.amenity-more {
+    color: #0a56bb;
+    float: left;
+    text-decoration: underline;
+    font-size: 12px;
+}
+.spadding {
+    padding: 14px 0;
+}
+.hotel-detail .detail-breadcrumb {
+    background: #ffffff;
+    color: #0a56bb;
+    border-bottom: 1px solid #0a56bb;
+    padding-left: 15px;
+    display: flex;
+}
+.hotel-detail .detail-breadcrumb li {
+    text-align: center;
+    padding: 15px 40px;
+    font-size: 13px;
+}
+.hotel-detail .detail-breadcrumb li.active {
+    background: #0a56bb;
+}
+.hotel-detail .detail-breadcrumb li.active a {
+    color: #ffffff;
+}
+.hotel-detail .sub-hotel-block section {
+    margin: 10px 0 15px;
+    display: table;
+    width: 100%;
+    background: #ffffff;
+    font-size: 12px;
+}
+.hotel-detail .sub-hotel-block .left-div {
+    width: 75%;
+}
+.hotel-detail .sub-hotel-block .left-div > .full-block {
+    padding-top: 15px;
+}
+.hotel-detail .sub-hotel-block .left-div .room-photo {
+    width: 25%;
+    padding-left: 15px;
+    position: relative;
+}
+.hotel-detail .sub-hotel-block .left-div .room-photo img {
+    width: 100%;
+    height: 125px;
+    border: 1px solid #eee;
+}
+.hotel-detail .sub-hotel-block .left-div .room-info {
+    padding-left: 15px;
+    width: 75%;
+    color: #0a56bb;
+}
+.hotel-detail .sub-hotel-block .left-div .room-info .room-type {
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.hotel-detail .sub-hotel-block .left-div .room-info .room-option {
+    margin-right: 15px;
+    width: auto;
+    font-size: 12px;
+}
+.hotel-detail .sub-hotel-block .left-div .room-info .room-option img {
+    width: 30px;
+}
+.hotel-detail .sub-hotel-block .left-div .avg-price-table {
+    color: #0a56bb;
+    padding: 0px;
+    border-bottom: 1px solid #cbcbcb;
+}
+.table-cell {
+    display: table-cell;
+    float: left;
+}
+.hotel-detail .sub-hotel-block .left-div .avg-price-table .table-cell {
+    padding: 15px 5px;
+    align-self: stretch;
+}
+.hotel-detail .sub-hotel-block .left-div .avg-price-table .max {
+    width: 11%;
+    padding-left: 15px;
+}
+.hotel-detail .sub-hotel-block .left-div .avg-price-table .facility, .hotel-detail .sub-hotel-block .left-div .avg-price-table .policy {
+    width: 20%;
+}
+.hotel-detail .sub-hotel-block .left-div .avg-price-table .room {
+    width: 13%;
+}
+.hotel-detail .sub-hotel-block .left-div .avg-price-table .bed {
+    width: 14%;
+}
+.hotel-detail .sub-hotel-block .left-div .avg-price-table .avg-price {
+    width: 22%;
+}
+.hotel-detail .sub-hotel-block section#rooms, .hotel-detail .main-div, .hotel-detail .avg-price-tbody, .hotel-detail .slide-map {
+    width: 100%;
+    height: auto;
+    display: flex;
+    background: #fff;
+}
+.hotel-detail .sub-hotel-block .left-div .avg-price-tbody {
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.hotel-detail .sub-hotel-block .left-div .avg-price-tbody .table-cell {
+    background: #f7f7f7;
+    padding: 15px 5px;
+    font-size: 12px;
+    text-align: left;
+    align-self: stretch;
+    border-radius: 0;
+}
+.hotel-detail .sub-hotel-block .left-div .avg-price-tbody .max {
+    padding-left: 15px;
+}
+.hotel-detail .sub-hotel-block .left-div .avg-price-tbody .max, .hotel-detail .sub-hotel-block .left-div .avg-price-tbody .bed {
+    width: 14%;
+}
+.hotel-detail .sub-hotel-block .left-div .avg-price-tbody .facility, .hotel-detail .sub-hotel-block .left-div .avg-price-tbody .policy {
+    width: 20%;
+}
+.hotel-detail .sub-hotel-block .left-div .avg-price-tbody .room {
+    width: 13%;
+    padding: 15px 15px 15px 0;
+}
+.hotel-detail .sub-hotel-block .left-div .avg-price-tbody .table-cell:last-child {
+    background: #ffffff;
+    font-size: 11px;
+    text-align: center;
+    width: 20%;
+}
+.hotel-detail .sub-hotel-block .left-div .avg-price-tbody .max img {
+    width: 13px;
+    vertical-align: top;
+}
+.hotel-detail .sub-hotel-block .left-div .avg-price-tbody .facility-item img {
+    width: 20px;
+}
+.facility-item-height {
+    padding: 0;
+}
+.hotel-detail .sub-hotel-block .left-div .avg-price-tbody .policy-content ul {
+    padding: 0;
+}
+.hotel-detail .sub-hotel-block .left-div .avg-price-tbody .room select {
+    width: 90%;
+    margin: 0 auto;
+}
+.hotel-detail .sub-hotel-block .left-div .avg-price-tbody .facility-item-more {
+    list-style-type: disc;
+    list-style-position: inside;
+    margin-left: 5px;
+    display: list-item;
+    margin-right: 5px;
+}
+.common-price {
+    font-size: 18px;
+    color: #0a56bb;
+    line-height: 1;
+}
+.hotel-detail .sub-hotel-block .left-div .avg-price-tbody .avg-price .room-price span {
+    display: block;
+    text-align: center;
+}
+.hotel-detail .sub-hotel-block .right-div {
+    width: 25%;
+    background: #f7f7f7;
+    align-self: stretch;
+}
+.hotel-detail .sub-hotel-block .right-div .reserve-title {
+    background: #0a56bb;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 15px 0;
+}
+.hotel-detail .sub-hotel-block .right-div .detail-reserve-block {
+    border-bottom: 1px solid #cbcbcb;
+    margin-bottom: 10px;
+}
+.hotel-detail .sub-hotel-block .right-div .detail-reserve-item {
+    padding: 7px;
+    margin: 7px;
+    border-bottom: 1px dashed #cbcbcb;
+}
+.hotel-detail .sub-hotel-block .right-div .detail-reserve-item:last-child {
+    border-bottom: none;
+}
+.hotel-detail .sub-hotel-block .right-div .reserve-list {
+    width: 67%;
+    float: left;
+    padding-right: 3px;
+    margin-bottom: 5px;
+}
+.hotel-detail .sub-hotel-block .right-div .reserve-room-price {
+    width: 33%;
+    float: left;
+    text-align: right;
+}
+.hotel-detail .sub-hotel-block .right-div .room-night-bed {
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 14px;
+    display: block;
+}
+.hotel-detail .sub-hotel-block .right-div .reserve-price {
+    color: #0a56bb;
+    font-size: 17px;
+}
+.hotel-detail .sub-hotel-block section {
+    margin: 10px 0 15px;
+    display: table;
+    width: 100%;
+    background: #ffffff;
+    font-size: 12px;
+}
+.hotel-detail .sub-hotel-block h3 {
+    padding: 15px 15px 0px;
+    color: #222222;
+}
+.hotel-detail .sub-hotel-block .inner-block {
+    line-height: 2;
+    padding: 0px 15px 15px;
+}
+.hotel-detail .sub-hotel-block .height {
+    height: 75px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.hotel-detail .sub-hotel-block .more-less {
+    background: #e4e6e5;
+    text-align: center;
+    padding-top: 4px;
+    display: block;
+    float: left;
+    width: 100%;
+}
+.hotel-detail .sub-hotel-block .more-less i {
+    font-size: 17px;
+    font-weight: bold;
+    vertical-align: top;
+    margin-right: 10px;
+}
+.hotel-detail .sub-hotel-block a.show-more {
+    cursor: pointer;
+    background: #ffffff;
+    padding: 7px 28px;
+    z-index: 1;
+    text-transform: capitalize;
+    color: #0a56bb;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0px 2px 1px #c5c5c5;
+}
+.hotel-detail .sub-hotel-block a.show-less {
+    cursor: pointer;
+    background: #ffffff;
+    padding: 7px 28px;
+    z-index: 11111;
+    text-transform: capitalize;
+    color: #0a56bb;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0px 2px 1px #c5c5c5;
+}
+.hotel-detail .sub-hotel-block .height {
+    height: 75px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.hotel-detail #amenities .amenity-type {
+    border-bottom: 1px solid #f2f2f2;
+}
+.hotel-detail #amenities .amenity-type:first-child {
+    margin: 0 0 14px 0;
+}
+.hotel-detail #amenities .amenity-type .amenity-main {
+    float: left;
+    width: 20%;
+    padding-left: 15px;
+}
+.hotel-detail #amenities .amenity-type .amenity-item {
+    float: left;
+    width: 80%;
+}
+.hotel-detail #amenities .amenity-type .amenity-main > .amenity-list {
+    width: 75%;
+}
+.hotel-detail #amenities .amenity-type .amenity-icon {
+    width: 3%;
+    float: left;
+}
+.hotel-detail #amenities .amenity-type .amenity-icon img {
+    margin-right: 0;
+}
+#amenities img, #oway-review img, #star-rating img {
+    width: 20px;
+    margin-right: 5px;
+}
+.hotel-detail #amenities .amenity-type .amenity-list {
+    width: 22%;
+    float: left;
+    height: 40px;
+    line-height: 21px;
+    padding-top: 3px;
+}
+.hotel-detail .sub-hotel-block #help-info img {
+    width: 25px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.hotel-detail .sub-hotel-block .inner-block {
+    line-height: 2;
+    padding: 0px 15px 15px;
+}
+.hotel-detail .sub-hotel-block .height {
+    height: 75px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.hotel-detail #nearest .essential {
+    margin-bottom: 10px;
+}
+.hotel-detail #nearest .essential .essential-icon img {
+    width: 30px;
+    float: left;
+    margin-right: 15px;
+}
+.hotel-detail #nearest .essential .essential-name {
+    float: left;
+}

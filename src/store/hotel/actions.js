@@ -26,6 +26,16 @@ const actions = {
     params,
     success,
     fail
+  }),
+
+  GET_DETAIL_REQUEST: 'GET_DETAIL_REQUEST',
+  GET_DETAIL_SUCCESS: 'GET_DETAIL_SUCCESS',
+  
+  detailHotel: (params, success, fail) => ({
+    type: actions.GET_DETAIL_REQUEST,
+    params,
+    success,
+    fail
   })
 };
 export default actions;
