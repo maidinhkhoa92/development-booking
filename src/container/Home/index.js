@@ -2,7 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { hotelActions } from 'store/actions';
-import { BusForm, CarForm, HotelForm, FlightForm, TourForm, Loading } from 'components';
+import HotelForm from 'container/Hotel/Form';
+import { BusForm, CarForm, FlightForm, TourForm, Loading } from 'components';
 
 class Home extends React.Component {
   constructor(props) {

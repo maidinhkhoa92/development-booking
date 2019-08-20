@@ -1,0 +1,1 @@
+export const searchInfo = state => state.Hotel.searchInfo;

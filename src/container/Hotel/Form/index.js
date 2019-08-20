@@ -3,11 +3,8 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import DatePicker from "react-datepicker";
 import { hotelActions } from 'store/actions';
-import { convertStyleA } from 'utils/convert';
-import history from 'utils/history';
-import Place from './Place';
-import Room from './Room';
-import {Loading} from 'components';
+import { history, convertStyleA } from 'utils';
+import {Loading, Room, Place} from 'components';
 import _ from 'lodash';
 
 class Form extends React.Component {

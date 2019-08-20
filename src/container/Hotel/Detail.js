@@ -1,5 +1,5 @@
 import React from 'react';
-import HotelDetail from 'components/HotelDetail'; 
+import { HotelPrice, HotelBox, DetailAmeni, TotalSearch, SearchFilter } from 'components';
 
 class HotelDetailContainer extends React.Component {
     constructor(props){
@@ -10,7 +10,13 @@ class HotelDetailContainer extends React.Component {
             <div id="content" className="mobile-view hotel-detail">
                 <div className="container">
                     <div className="row">
-                        <HotelDetail />
+                        <div className="col-sm-12 col-md-12 col-xs-12">
+                            <TotalSearch />
+                            <SearchFilter />
+                            <HotelPrice />
+                            <DetailAmeni />
+                            <HotelBox />
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,7 +1,7 @@
 import React from 'react';
-import {ClearFilter, SearchBed, SearchName, SearchPrice, SearchRating, SearchServices, SearchType} from './components';
+import {ClearFilter, SearchBed, SearchName, SearchPrice, SearchRating, SearchServices, SearchType} from 'components';
 
-const SideBar = () => {
+const Sidebar = () => {
     return (
         <div className="col-sm-3 col-md-3 col-xs-12 filters-container toggle-container">
             <ClearFilter />
@@ -15,4 +15,4 @@ const SideBar = () => {
     )
 }
 
-export default SideBar;
+export default Sidebar;

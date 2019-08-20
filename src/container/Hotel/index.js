@@ -1,5 +1,6 @@
 import React from 'react';
-import {HotelSidebar, HotelResult} from 'components';
+import Sidebar from './SideBar';
+import Result from './Result';
 
 class HotelList extends React.Component {
     constructor(props){
@@ -10,8 +11,8 @@ class HotelList extends React.Component {
             <div id="content" className="mobile-view hotel-listing">
                 <div className="container">
                     <div className="row">
-                        <HotelSidebar />
-                        <HotelResult />
+                        <Sidebar />
+                        <Result />
                     </div>
                 </div>
             </div>
